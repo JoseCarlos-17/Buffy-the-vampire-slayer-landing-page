@@ -1,0 +1,109 @@
+@charset"utf-8";
+
+@font-face {
+	font-family: Arial;
+	src: url("../fotos/Buffied.ttf");
+}
+
+/*FORMATAÇÃO DE TEXTO*/
+
+h1 {
+	font-family: Arial;
+	font-size: 400%;
+}
+
+h2 {
+	font-family: Arial;
+	color: white;
+}
+
+a {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+p {
+	text-indent: 5%;
+	text-align: justify;
+}
+
+/*FORMATAÇÃO DE CORPO*/
+
+body {
+	background-color: black;
+	background-size: 100%;
+  background-image: url('../fotos/buffybackground10.jpg');
+	background-repeat: no-repeat;
+	color: white;
+	text-shadow: 3px 2px 3px black;
+	font-family: sans-serif;
+}
+
+#corpo-site {
+	padding-top: 30px;
+}
+
+#rodape {
+	background-color: darkred;
+  margin-top: 780px;
+	padding: 30px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*FORMATAÇÃO DE IMAGEM*/
+
+.logo2 img {
+	top: 0px;
+	right: 150px;
+	position: absolute;
+  width: 300px;
+	height: auto;
+}
+
+#menu-site {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#menu-site ul {
+  display: flex;
+  flex-direction: row;
+	list-style: none;
+  flex-wrap: wrap;
+}
+
+#menu-site li {
+	text-transform: none;
+  margin: 5px;
+	background-color: darkred;
+	box-shadow: 4px 4px 1px white;
+	padding: 10px 23px 10px 23px;
+	font-family: Arial;
+	font-size: 190%;
+}
+
+#menu-site li:hover {
+  box-shadow: 4px 4px 1px black;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+#menu-site a {
+	transition: color 0.3s;
+	text-shadow: 0px 0px 0px black;
+}
+
+#menu-site a:hover {
+	color: black;
+  text-shadow: 2px 2px 9px black;
+}
+
+#menu-site li a:link {
+	text-decoration: none;
+}
