@@ -7,8 +7,6 @@
 
 /*FORMATAÇÃO DE TEXTO*/
 
-
-
 h1 {
 	font-family: Arial;
 	font-size: 400%;
@@ -25,11 +23,11 @@ a {
 }
 
 p {
-	text-indent: 5%;
+	text-indent: 2%;
 	text-align: justify;
 }
 
-article.personagem-vilao h2 {
+.article h2 {
 	background-color: darkblue;
 	font-size: 35pt;
 	color: white;
@@ -38,8 +36,8 @@ article.personagem-vilao h2 {
 
 /*FORMATAÇÃO DE CORPO*/
 
-div#interface {
-	width: 1100px;
+#interface {
+	width: 80%;
 	margin: -25px auto 0px auto;
 	background-color: black;
 	background-image: url(../fotos/AgnoZ6a2.jpg);
@@ -51,7 +49,7 @@ div#interface {
 
 body {
 	background-color: black;
-	background-size: 76% 105%;
+	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
@@ -59,13 +57,16 @@ body {
 	font-family: sans-serif;
 }
 
-section#corpo-site {
+#corpo-site {
 	padding-top: 30px;
 }
 
-footer#rodape {
+#rodape {
 	background-color: darkred;
 	padding: 30px;
+	text-align: center;
+	left: 0;
+	bottom: 0;
 }
 
 /*FORMATAÇÃO DE IMAGEM*/
@@ -73,60 +74,105 @@ footer#rodape {
 #main-photo img {
 	margin-top: -110px;
 	width: 100%;
-	 height: 700px;
+	height: auto;
 }
 
- figure.foto-personagem img {
- 	border: 8px solid white;
- 	box-shadow: 2px 2px 4px black;
- 	display: inline-block;
- 	margin-right: 25px;
- 	margin-left: 25px;
- 	width: 17%;
- 	height: 20%;
- }
-
-figure.foto-vilao img {
-	border: 8px solid white;
- 	box-shadow: 2px 2px 4px black;
- 	display: inline-block;
-	 margin-left: 25px;
-	 margin-right: 25px;
- 	width: 26%;
- 	height: 30%;
+.logo {
+	text-align: right;
 }
 
-figure.buffy20anos img {
-	border: 8px solid white;
- 	box-shadow: 2px 2px 4px black;
- 	display: inline-block;
-}
-
-figure.logo img {
-	top: -30px;
-	right: 200px;
-	position: absolute;
-}
-
-.logo2 img {
-	top: -5px;
-	left: 800px;
-	position: absolute;
-	width: 350px;
-	height: 230px;
-}
-
-figure.foto-galeria img {
-	width: 40%;
-	height: 40%;
-	border: 8px solid white;
-	display: inline-block;
-	margin-bottom: 50px;
+.logo img {
+	width: 250px;
+	height: auto;
 }
 
 figcaption {
 	margin-bottom: 50px;
 	margin-top: 5px;
+}
+
+.foto-personagem img {
+  border: 8px solid white;
+  box-shadow: 2px 2px 4px black;
+  display: inline-block;
+  margin-right: 25px;
+  margin-left: 25px;
+  width: 17%;
+  height: 20%;
+}
+
+.profile-character-photo {
+  border: 8px solid white;
+  box-shadow: 2px 2px 4px black;
+  margin: -80px 25px 0px 25px;
+  max-width: 100%;
+}
+
+.profile-character-photo img {
+	width: 220px;
+}
+
+.profile-villain-photo {
+  border: 8px solid white;
+  box-shadow: 2px 2px 4px black;
+  margin: -80px 25px 0px 25px;
+  max-width: 100%;
+}
+
+.profile-villain-photo img {
+  width: 320px;
+}
+
+.buffy20anos img {
+	border: 8px solid white;
+ 	box-shadow: 2px 2px 4px black;
+ 	display: inline-block;
+}
+
+.personagem  {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 20px 0px;
+}
+
+.personagem > figure {
+  display: flex;
+  flex-direction: row;
+}
+
+.villain-info  {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 0px 20px 0px;
+}
+  
+.villain-info > figure {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-and-gif {
+  display: flex;
+  justify-content: right;
+  margin: 0px 25px 20px 55px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.photo-and-gif img {
+  border: 8px solid white;
+  box-shadow: 2px 2px 4px black;
+  width: 400px;
+  height: auto;
+  margin: 0px 50px 0 50px;
+}
+
+.foto-galeria img {
+  width: 40%;
+  height: 40%;
+  border: 8px solid white;
+  display: inline-block;
+  margin-bottom: 50px;
 }
 
 /*FORMATAÇÃO DE MENU*/
@@ -139,62 +185,43 @@ figcaption {
 	background-position: center; 
 }
 
-nav#menu-site ul {
+#menu-site > ul {
 	list-style: none;
+  display: flex;
+	flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: -5px 30px 0px 0px;
 }
 
-nav#menu-site li {
-	display: inline-block;
+#menu-site > ul > li {
 	text-transform: none;
-	position: relative;
-	top: 199px;
-	right: -560px;
-	background-color: darkred; 
+  margin: 5px;
+	background-color: darkred;
 	margin-bottom: 15px;
-	box-shadow: 1px 2px 2px black;
-	padding: 10px;
+	box-shadow: 4px 4px 1px white;
+	padding: 10px 23px 10px 23px;
 	font-family: Arial;
 	font-size: 169%;
 	
 }
 
-nav#menu-site a {
+#menu-site > ul > li:hover {
+  box-shadow: 4px 4px 1px black;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+#menu-site > ul > li > a {
 	transition: color 0.3s;
 	text-shadow: 0px 0px 0px black;
 }
 
-nav#menu-site a:hover {
+#menu-site > ul > li > a:hover {
 	color: black;
-	
+  text-shadow: 2px 2px 9px black;
 }
 
-nav#menu-site li a:link {
+#menu-site > ul > li > a:link {
 	text-decoration: none;
-}
-
-nav#menu li {
-	display: inline-block;
-	text-transform: none;
-	position: relative;
-	top: -10px;
-	left: 150px;
-	background-color: darkred; 
-	margin-bottom: 15px;
-	box-shadow: 1px 2px 2px black;
-	padding: 10px;
-	font-family: Arial;
-	font-size: 180%;
-}
-
-nav#menu li a:link {
-	text-decoration: none;
-}
-
-nav#menu a {
-	transition: color 0.3s;
-	text-shadow: 0px 0px 0px black;
-}
-
-nav#menu a:hover {
-	color: black;
 }
